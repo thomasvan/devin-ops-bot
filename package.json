@@ -1,0 +1,22 @@
+{
+  "name": "devin-ops-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Devin Bot for Sentry fixes and morning Slack reports",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "triage": "tsx src/cli/triage.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
